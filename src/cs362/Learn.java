@@ -20,6 +20,7 @@ import cs362.hw2.PerceptronClassifier;
 import cs362.hw3.GaussianKernelLogisticRegression;
 import cs362.hw3.LinearKernelLogisticRegression;
 import cs362.hw3.PolynomialKernelLogisticRegression;
+import cs362.hw4.LambdaMeansPredictor;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionBuilder;
 
@@ -140,6 +141,8 @@ public class Learn {
         }
         else
             logistic_regression = null;
+        //------------hw4-----------------------------------------------
+        Predictor lambda_means = new LambdaMeansPredictor();
         //-------------------------------------------------------------------
         algo.put("majority", majority);
         algo.put("even_odd", even_odd);
@@ -147,6 +150,7 @@ public class Learn {
         algo.put("naive_bayes", naiveBayes);
         algo.put("perceptron", perceptron);
         algo.put("logistic_regression", logistic_regression);
+        algo.put("lambda_means", lambda_means);
         //-------------------------------------------------------------------
         Predictor selected_algo = algo.get(algorithm);
         selected_algo.train(instances);

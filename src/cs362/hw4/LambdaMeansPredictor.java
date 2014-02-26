@@ -12,12 +12,13 @@ import java.util.*;
 public class LambdaMeansPredictor extends Predictor {
 
     double lambda = 1.0;
+    int iter_time = 10;
     List<Instance> _instances;
     int row;
     int col;
-    List<Integer> indicator = new ArrayList<Integer>();
+    List<Integer> indicator;
     TreeSet<Integer> avaible_feature = new TreeSet<Integer>();
-    List<Map<Integer, Double>> mu = new ArrayList<Map<Integer, Double>>() ;
+    List<Map<Integer, Double>> mu = new ArrayList<Map<Integer,Double>>();
 
     private void verify_feature(){
 
@@ -61,7 +62,7 @@ public class LambdaMeansPredictor extends Predictor {
         int num = feature_list.size();
         for(int i : avaible_feature){
             double x_i_bar = 0;
-            for(Map<Integer, Double> f : feature_list.){
+            for(Map<Integer, Double> f : feature_list){
                 Double tmp = f.get(i);
                 if(null == tmp)
                     tmp = 0d;
@@ -94,18 +95,39 @@ public class LambdaMeansPredictor extends Predictor {
         }
     }
 
+    private void m_step(){
+        for(int i = 0; i < mu.size(); ++i){
+            List<Map<Integer, Double>> tmp = new ArrayList<Map<Integer, Double>>();
+            for(int j : indicator){
+                if(j == i)
+                    tmp.add(_instances.get(i).getFeatureVector().getMap());
+            }
+            mu.add(i, getCenter(tmp));
+        }
+    }
     private void init(List<Instance> instances){
         _instances = instances;
         verify_feature();
         row = getRow();
         col = getCol();
+        indicator = new ArrayList<Integer>(row);
+        List<Map<Integer, Double>> init_group = new ArrayList<Map<Integer, Double>>();
+        for(int i = 0; i < row; ++i){
+            indicator.add(0);
+            init_group.add(_instances.get(i).getFeatureVector().getMap());
+        }
+        mu.add(getCenter(init_group));
 
     }
     @Override
     public void train(List<Instance> instances) {
         init(instances);
-
-
+        for(int i = 0; i < iter_time; ++i){
+            System.out.println(i);
+            e_step();
+            m_step();
+        }
+        System.out.println(mu.size());
     }
 
     @Override
