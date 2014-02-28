@@ -142,7 +142,13 @@ public class Learn {
         else
             logistic_regression = null;
         //------------hw4-----------------------------------------------
-        Predictor lambda_means = new LambdaMeansPredictor();
+        double cluster_lambda = 0.0;
+        if (CommandLineUtilities.hasArg("cluster_lambda"))
+            cluster_lambda = CommandLineUtilities.getOptionValueAsFloat("cluster_lambda");
+        int clustering_training_iterations = 10;
+        if (CommandLineUtilities.hasArg("clustering_training_iterations"))
+            clustering_training_iterations = CommandLineUtilities.getOptionValueAsInt("clustering_training_iterations");
+        Predictor lambda_means = new LambdaMeansPredictor(cluster_lambda, clustering_training_iterations);
         //-------------------------------------------------------------------
         algo.put("majority", majority);
         algo.put("even_odd", even_odd);
@@ -230,6 +236,9 @@ public class Learn {
 
         registerOption("polynomial_kernel_exponent", "double", true, "The exponent of the polynomial kernel.");
         registerOption("gaussian_kernel_sigma", "double", true, "The sigma of the Gaussian kernel.");
+        //--------------hw4-----------------------------------------------------------------------------------------------------------------
+        registerOption("cluster_lambda", "double", true, "The value of lambda in lambda-means.");
+        registerOption("clustering_training_iterations", "int", true, "The number of lambda-means EM iterations.");
 
         // Other options will be added here.
 	}

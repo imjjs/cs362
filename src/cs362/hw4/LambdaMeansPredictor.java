@@ -1,9 +1,9 @@
 package cs362.hw4;
 
+import cs362.ClassificationLabel;
 import cs362.Instance;
 import cs362.Label;
 import cs362.Predictor;
-
 import java.util.*;
 
 /**
@@ -11,15 +11,19 @@ import java.util.*;
  */
 public class LambdaMeansPredictor extends Predictor {
 
-    double lambda = 1.0;
-    int iter_time = 10;
+    double lambda;
+    int iter_time;
+    public LambdaMeansPredictor(double _lambda, int _iter_time){
+        lambda = _lambda;
+        iter_time =_iter_time;
+    }
     List<Instance> _instances;
     int row;
     int col;
     List<Integer> indicator;
     TreeSet<Integer> avaible_feature = new TreeSet<Integer>();
-    List<Map<Integer, Double>> mu = new ArrayList<Map<Integer,Double>>();
-
+    List<Map<Integer, Double>> mu = new ArrayList<Map<Integer,Double>>(200);
+    List<Map<Integer, Double>> _mu;
     private void verify_feature(){
 
         for(Instance i : _instances){
@@ -38,20 +42,21 @@ public class LambdaMeansPredictor extends Predictor {
 
     private double getDistance(Map<Integer, Double> x1, Map<Integer, Double> x2){
         double result = 0d;
-        for(int i: avaible_feature){
-            double x1_i;
-            double x2_i;
-            Double tmp = x1.get(i);
-            if(null == tmp)
+        TreeSet<Integer> feature = new TreeSet<Integer>();
+        for(Map.Entry<Integer, Double> e : x1.entrySet())
+            feature.add(e.getKey());
+        for(Map.Entry<Integer, Double> e : x2.entrySet())
+            feature.add(e.getKey());
+        for(int i: feature){
+            Double x1_i;
+            Double x2_i;
+            x1_i = x1.get(i);
+            if(null == x1_i)
                 x1_i = 0d;
-            else
-                x1_i = tmp;
-            tmp = x2.get(i);
-            if(null == tmp)
+            x2_i = x2.get(i);
+            if(null == x2_i)
                 x2_i = 0d;
-            else
-                x2_i = tmp;
-            tmp = x2_i - x1_i;
+            double tmp = x2_i - x1_i;
             result += tmp * tmp;
         }
         return result;
@@ -84,14 +89,16 @@ public class LambdaMeansPredictor extends Predictor {
             }
         }
         if(min_value > lambda){
-            mu.add(features);
-            min = mu.size() - 1;
+            _mu.add(features);
+            min = _mu.size() - 1;
         }
         return min;
     }
     private void e_step(){
         for(int i = 0; i < _instances.size(); ++i){
-            indicator.add(i,e_step_i(_instances.get(i).getFeatureVector().getMap()));
+            _mu = new ArrayList<Map<Integer, Double>>(mu);
+            indicator.set(i,e_step_i(_instances.get(i).getFeatureVector().getMap()));
+            mu = _mu;
         }
     }
 
@@ -102,7 +109,7 @@ public class LambdaMeansPredictor extends Predictor {
                 if(j == i)
                     tmp.add(_instances.get(i).getFeatureVector().getMap());
             }
-            mu.add(i, getCenter(tmp));
+            mu.set(i, getCenter(tmp));
         }
     }
     private void init(List<Instance> instances){
@@ -110,13 +117,20 @@ public class LambdaMeansPredictor extends Predictor {
         verify_feature();
         row = getRow();
         col = getCol();
-        indicator = new ArrayList<Integer>(row);
+        indicator = new ArrayList<Integer>(2000);
         List<Map<Integer, Double>> init_group = new ArrayList<Map<Integer, Double>>();
         for(int i = 0; i < row; ++i){
             indicator.add(0);
             init_group.add(_instances.get(i).getFeatureVector().getMap());
         }
         mu.add(getCenter(init_group));
+        if(0.0 == lambda){
+            double sum = 0d;
+            for(int i = 0; i < row; ++i){
+                sum += getDistance(mu.get(0), instances.get(i).getFeatureVector().getMap());
+            }
+            lambda = sum / row;
+        }
 
     }
     @Override
@@ -125,13 +139,33 @@ public class LambdaMeansPredictor extends Predictor {
         for(int i = 0; i < iter_time; ++i){
             System.out.println(i);
             e_step();
+            System.out.printf("m,%d\n", mu.size());
             m_step();
         }
-        System.out.println(mu.size());
+        //the code below is to check those empty clutters set
+        for(int i = 0; i < mu.size(); ++i){
+            int count = 0;
+            for(int j : indicator){
+                if(j == i)
+                    count++;
+            }
+            if (0 == count)
+                mu.set(i, new TreeMap<Integer, Double>());
+        }
     }
 
     @Override
     public Label predict(Instance instance) {
-        return null;
+        Map<Integer, Double> feature = instance.getFeatureVector().getMap();
+        int min = 0;
+        double min_value = getDistance(feature, mu.get(min));
+        for(int i = 1; i < mu.size(); ++i){
+            double tmp = getDistance(feature, mu.get(i));
+            if(tmp < min_value){
+                min_value = tmp;
+                min = i;
+            }
+        }
+        return new ClassificationLabel(min);
     }
 }
