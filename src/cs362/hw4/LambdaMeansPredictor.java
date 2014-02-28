@@ -95,19 +95,20 @@ public class LambdaMeansPredictor extends Predictor {
         return min;
     }
     private void e_step(){
+        _mu = new ArrayList<Map<Integer, Double>>(mu);
         for(int i = 0; i < _instances.size(); ++i){
-            _mu = new ArrayList<Map<Integer, Double>>(mu);
+
             indicator.set(i,e_step_i(_instances.get(i).getFeatureVector().getMap()));
-            mu = _mu;
         }
+        mu = _mu;
     }
 
     private void m_step(){
         for(int i = 0; i < mu.size(); ++i){
             List<Map<Integer, Double>> tmp = new ArrayList<Map<Integer, Double>>();
-            for(int j : indicator){
-                if(j == i)
-                    tmp.add(_instances.get(i).getFeatureVector().getMap());
+            for(int j = 0; j < indicator.size(); ++j){
+                if(indicator.get(j) == i)
+                    tmp.add(_instances.get(j).getFeatureVector().getMap());
             }
             mu.set(i, getCenter(tmp));
         }

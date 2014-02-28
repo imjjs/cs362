@@ -56,7 +56,23 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/cs362/hw4/LambdaMeansPredictor.java" line="138" class="cs362.hw4.LambdaMeansPredictor" package="cs362.hw4">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -69,7 +85,7 @@
       <file leaf-file-name="Learn.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/Learn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="104" selection-start="6904" selection-end="6904" vertical-scroll-proportion="0.0" vertical-offset="3000" max-vertical-offset="5020">
+            <state line="145" column="49" selection-start="6454" selection-end="6454" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="4500">
               <folding />
             </state>
           </provider>
@@ -78,8 +94,10 @@
       <file leaf-file-name="FeatureVector.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/FeatureVector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="43" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="540">
-              <folding />
+            <state line="16" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <folding>
+                <element signature="method#getMap#0;class#FeatureVector#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,11 +105,23 @@
       <file leaf-file-name="LambdaMeansPredictor.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cs362/hw4/LambdaMeansPredictor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="22" selection-start="1671" selection-end="1671" vertical-scroll-proportion="-0.5654952" vertical-offset="1514" max-vertical-offset="3540">
+            <state line="106" column="0" selection-start="3082" selection-end="3082" vertical-scroll-proportion="0.38658148" vertical-offset="1878" max-vertical-offset="3560">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#599#620#0" expanded="true" />
-                <element signature="e#3691#3713#0" expanded="true" />
+                <element signature="e#3184#3206#0" expanded="true" />
+                <element signature="e#3718#3740#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Instance.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs362/Instance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+              <folding>
+                <element signature="e#469#470#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -530,7 +560,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1916" height="1058" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -581,7 +611,9 @@
     <entry file="file://$PROJECT_DIR$/src/cs362/FeatureVector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="43" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="540">
-          <folding />
+          <folding>
+            <element signature="method#getMap#0;class#FeatureVector#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -591,7 +623,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#599#620#0" expanded="true" />
-            <element signature="e#3691#3713#0" expanded="true" />
+            <element signature="e#3184#3206#0" expanded="true" />
+            <element signature="e#3718#3740#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,7 +639,9 @@
     <entry file="file://$PROJECT_DIR$/src/cs362/FeatureVector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="43" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="540">
-          <folding />
+          <folding>
+            <element signature="method#getMap#0;class#FeatureVector#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -616,7 +651,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#599#620#0" expanded="true" />
-            <element signature="e#3691#3713#0" expanded="true" />
+            <element signature="e#3184#3206#0" expanded="true" />
+            <element signature="e#3718#3740#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -634,7 +670,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#599#620#0" expanded="true" />
-            <element signature="e#3691#3713#0" expanded="true" />
+            <element signature="e#3184#3206#0" expanded="true" />
+            <element signature="e#3718#3740#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -652,7 +689,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#599#620#0" expanded="true" />
-            <element signature="e#3691#3713#0" expanded="true" />
+            <element signature="e#3184#3206#0" expanded="true" />
+            <element signature="e#3718#3740#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -670,7 +708,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#599#620#0" expanded="true" />
-            <element signature="e#3691#3713#0" expanded="true" />
+            <element signature="e#3184#3206#0" expanded="true" />
+            <element signature="e#3718#3740#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,7 +727,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#599#620#0" expanded="true" />
-            <element signature="e#3691#3713#0" expanded="true" />
+            <element signature="e#3184#3206#0" expanded="true" />
+            <element signature="e#3718#3740#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -853,11 +893,6 @@
         <state line="13" column="35" selection-start="379" selection-end="379" vertical-scroll-proportion="0.30744338" vertical-offset="0" max-vertical-offset="618" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs362/Instance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="0.11875" vertical-offset="0" max-vertical-offset="640" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs362/ClassificationLabel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="13" selection-start="59" selection-end="59" vertical-scroll-proportion="0.116385914" vertical-offset="0" max-vertical-offset="653" />
@@ -878,27 +913,39 @@
         <state line="9" column="13" selection-start="153" selection-end="153" vertical-scroll-proportion="0.2078125" vertical-offset="0" max-vertical-offset="640" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs362/FeatureVector.java">
+    <entry file="file://$PROJECT_DIR$/src/cs362/Learn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="540">
+        <state line="145" column="49" selection-start="6454" selection-end="6454" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="4500">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs362/Learn.java">
+    <entry file="file://$PROJECT_DIR$/src/cs362/FeatureVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="104" selection-start="6904" selection-end="6904" vertical-scroll-proportion="0.0" vertical-offset="2260" max-vertical-offset="4500">
-          <folding />
+        <state line="16" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <folding>
+            <element signature="method#getMap#0;class#FeatureVector#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs362/Instance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+          <folding>
+            <element signature="e#469#470#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs362/hw4/LambdaMeansPredictor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="22" selection-start="1671" selection-end="1671" vertical-scroll-proportion="-0.5654952" vertical-offset="1514" max-vertical-offset="3540">
+        <state line="106" column="0" selection-start="3082" selection-end="3082" vertical-scroll-proportion="0.38658148" vertical-offset="1878" max-vertical-offset="3560">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#599#620#0" expanded="true" />
-            <element signature="e#3691#3713#0" expanded="true" />
+            <element signature="e#3184#3206#0" expanded="true" />
+            <element signature="e#3718#3740#0" expanded="true" />
           </folding>
         </state>
       </provider>
