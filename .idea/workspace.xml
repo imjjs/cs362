@@ -69,7 +69,7 @@
       <file leaf-file-name="FeatureVector.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/FeatureVector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="129" max-vertical-offset="552">
+            <state line="16" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="320" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -78,7 +78,7 @@
       <file leaf-file-name="ImageUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/ImageUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="5428">
+            <state line="29" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="4940">
               <folding />
             </state>
           </provider>
@@ -87,7 +87,7 @@
       <file leaf-file-name="InsertImageNoise.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/InsertImageNoise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="253" max-vertical-offset="1932">
+            <state line="11" column="13" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="1680">
               <folding />
             </state>
           </provider>
@@ -96,7 +96,7 @@
       <file leaf-file-name="Pair.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/Pair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="13" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="69" max-vertical-offset="782">
+            <state line="3" column="13" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
@@ -105,16 +105,7 @@
       <file leaf-file-name="RemoveImageNoise.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/RemoveImageNoise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="8" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0" vertical-offset="1107" max-vertical-offset="3657">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GreyscalImagesProcessor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/GreyscalImagesProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="483">
+            <state line="68" column="8" selection-start="2439" selection-end="2439" vertical-scroll-proportion="0.0" vertical-offset="1360" max-vertical-offset="3320">
               <folding />
             </state>
           </provider>
@@ -123,7 +114,7 @@
       <file leaf-file-name="LinearRegression.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/hw2/LinearRegression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="70" selection-start="933" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="1679">
+            <state line="28" column="70" selection-start="933" selection-end="991" vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1580">
               <folding />
             </state>
           </provider>
@@ -132,16 +123,7 @@
       <file leaf-file-name="PerceptronClassifier.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs362/hw2/PerceptronClassifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="1475" max-vertical-offset="1863">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlackWhiteImageProcessor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/BlackWhiteImageProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="5" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="703" max-vertical-offset="1196">
+            <state line="18" column="13" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1840">
               <folding />
             </state>
           </provider>
@@ -150,10 +132,10 @@
       <file leaf-file-name="MRFImageProcessor.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/MRFImageProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="5" selection-start="528" selection-end="528" vertical-scroll-proportion="0.28678304" vertical-offset="368" max-vertical-offset="1587">
+            <state line="97" column="0" selection-start="2735" selection-end="2735" vertical-scroll-proportion="0.9583767" vertical-offset="1019" max-vertical-offset="2060">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#915#933#0" expanded="true" />
+                <element signature="e#1879#1896#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,10 +166,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="-3" />
-    <option name="width" value="1327" />
-    <option name="height" value="775" />
+    <option name="x" value="4" />
+    <option name="y" value="22" />
+    <option name="width" value="1916" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -200,7 +182,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectStructureProblems">
     <ignored-problems>
@@ -220,7 +202,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -317,6 +298,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -375,6 +357,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -400,19 +395,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -645,7 +627,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="-3" width="1327" height="775" extended-state="6" />
+    <frame x="4" y="22" width="1916" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -658,17 +640,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1957672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3382353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19572026" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33771485" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -694,6 +676,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/cs362/hw2/PerceptronClassifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/MRFImageProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="5" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1380">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1879#1896#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs362/hw4/LambdaMeansPredictor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="115" column="0" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.0" vertical-offset="2300" max-vertical-offset="2420" />
@@ -914,7 +913,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="442" selection-end="442" vertical-scroll-proportion="0.4059829" vertical-offset="0" max-vertical-offset="936">
           <folding>
-            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -954,23 +953,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/BlackWhiteImageProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="5" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" vertical-offset="703" max-vertical-offset="1196">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs362/hw2/PerceptronClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="13" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0" vertical-offset="1475" max-vertical-offset="1863">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/GreyscalImagesProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="483">
           <folding />
         </state>
       </provider>
@@ -984,10 +969,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs362/image_denoise/MRFImageProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="528" selection-end="528" vertical-scroll-proportion="0.28678304" vertical-offset="368" max-vertical-offset="1587">
+        <state line="97" column="0" selection-start="2735" selection-end="2735" vertical-scroll-proportion="0.9583767" vertical-offset="1019" max-vertical-offset="2060">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#915#933#0" expanded="true" />
+            <element signature="e#1879#1896#0" expanded="true" />
           </folding>
         </state>
       </provider>
