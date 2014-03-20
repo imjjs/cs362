@@ -68,7 +68,7 @@ public class RemoveImageNoise {
 		
 		
 		//MRFImageProcessor mrf = new MRFImageProcessor(eta, beta, omega, num_iterations, num_K, use_second_level);
-		MRFImageProcessor mrf = new MRFImageProcessor(eta, beta, num_iterations);
+		MRFImageProcessor mrf = new MRFImageProcessor(eta, beta, num_iterations,num_colors);
 		int[][] denosified_image_array = mrf.denoisifyImage(encoded_image_array, encoded_image_array2);
 		
 		int[][] decoded_image_array = ImageUtils.decodeImageArrayUsingColorMap(color_map, denosified_image_array);

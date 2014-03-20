@@ -1,65 +1,60 @@
 package cs362.image_denoise;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 /**
  * Created by yli on 14-3-16.
  */
 public class MRFImageProcessor {
-    int row;
-    int col;
-    double eta;
-    double beta;
-    int iter_time;
-    int[][] bigX;
-    int[][] _bigX;
-    int[][] bigY;
-    public MRFImageProcessor(double _eta, double _beta, int _iter_time){
+    protected int row;
+    protected int col;
+    protected double eta;
+    protected double beta;
+    protected int iter_time;
+    protected int[][] bigX;
+    protected int[][] _bigX;
+    protected int[][] bigY;
+    protected int num_color;
+    public MRFImageProcessor(double _eta, double _beta, int _iter_time, int _num_color){
         eta = _eta;
         beta = _beta;
         iter_time = _iter_time;
+        num_color = _num_color;
     }
 
-    private int neighbour(int i, int j, int value){
-        int n1 = 0;
-        int n2 = 0;
-        int n3 = 0;
-        int n4 = 0;
-        if(0 != i)
-            n1 = bigX[i-1][j] * value;
-        if(0 != j)
-            n2 = bigX[i][j-1] * value;
-        if(row != i)
-            n3 = bigX[i+1][j] * value;
-        if(col != j)
-            n4 = bigX[i][j+1] * value;
-        return n1 + n2 + n3 + n4;
-
+    protected int[][] arrayCopy(int[][] a){
+        int[][] result = new int[row][col];
+        for(int i = 0; i < row; ++i)
+            for(int j = 0; j < col; ++j)
+            result[i][j] = a[i][j];
+        return result;
     }
 
-    private double neg_one(int i, int j){
-        return beta * neighbour(i, j, -1) + eta * bigY[i][j] * -1;
-    }
 
-    private double one(int i, int j){
-        return beta * neighbour(i, j, 1) + eta * bigY[i][j] * 1;
-    }
+    protected int update(int i, int j){
+        Map<Integer, Integer> tmp = new TreeMap <Integer, Integer>();
+        for(int i = 0; i < num_color; ++i){
 
-    private void process(){
+        }
+    }
+    protected void process(){
         for(int i = 0; i < row; ++i){
             for(int j = 0; j < col; ++j){
-                if(one(i, j) > neg_one(i, j))
-                    _bigX[i][j] = 1;
-                else
-                    _bigX[i][j] = -1;
+                _bigX[i][j] = update(i,j);
             }
         }
     }
+
     public int[][] denoisifyImage(int[][] image1, int[][] i2){
         row = image1.length;
         col = image1[0].length;
         bigY = image1;
-        bigX = bigY.clone();
+        bigX = new int[row][col];
+        bigX = arrayCopy(bigY);
         for(int i = 0; i < iter_time; ++i){
-            _bigX = bigX.clone();
+            //System.out.print(i);
+            _bigX = new int[row][col];
             process();
             bigX = _bigX;
         }
